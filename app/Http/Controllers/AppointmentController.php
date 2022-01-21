@@ -51,6 +51,8 @@ class AppointmentController extends Controller
             $request->start,
             $request->end
         );
+        print_r($appointments);
+        die();
 
         return response()->json($appointments);
     }

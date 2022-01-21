@@ -64,6 +64,7 @@
                                                 </thead>
                                                 <tbody>
                                                     @foreach ($appointments as $appointment)
+                                                    echo $appointments
                                                         <tr>
                                                             <td>{{ $appointment->patient->name }}</td>
                                                             <td>{{ $appointment->doctor->name }}</td>
