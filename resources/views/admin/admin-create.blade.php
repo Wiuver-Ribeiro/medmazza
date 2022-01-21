@@ -45,9 +45,9 @@
                                                 <div class="controls" style="display: none;">
                                                     <input type="file" name="image"/>
                                                 </div>
-                                                <input id='admin-name' class='form-control' type='text' name='name' placeholder="Nome" required>
-                                                <input id='admin-email' class='form-control mt-3' type='text' name='email' placeholder="Email" required>
-                                                <input id='admin-password' class='form-control mt-3' type='password' name='password' placeholder="Senha" required>
+                                                <input id='admin-name' class='form-control' type='text' name='name' placeholder="Nome" required autocomplete="off">
+                                                <input id='admin-email' class='form-control mt-3' type='text' name='email' placeholder="Email" required autocomplete="off">
+                                                <input id='admin-password' class='form-control mt-3' type='password' name='password' placeholder="Senha" required autocomplete="off">
                                                 <br>
                                                 <button class='btn btn-outline-primary' type='submit'>Enviar</button>
                                                 <br>

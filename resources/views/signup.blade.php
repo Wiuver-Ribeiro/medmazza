@@ -34,16 +34,16 @@
                                     <form action="{{ route('signup') }}" method="post">
                                         {{ csrf_field() }}
                                         <div class="input-group mb-3">
-                                            <input type="text" class="form-control" name="name" placeholder="Nome">
+                                            <input type="text" class="form-control" name="name" placeholder="Nome" autocomplete="off">
                                         </div>
                                         <div class="input-group mb-3">
-                                            <input type="email" class="form-control" name="email" placeholder="Email">
+                                            <input type="email" class="form-control" name="email" placeholder="Email" autocomplete="off">
                                         </div>
                                         <div class="input-group mb-4">
-                                            <input type="password" class="form-control" name="password" placeholder="Senha">
+                                            <input type="password" class="form-control" name="password" placeholder="Senha" autocomplete="off">
                                         </div>
                                         <div class="input-group mb-4">
-                                            <input type="password" class="form-control" name="password_confirmation" placeholder="Confimar senha">
+                                            <input type="password" class="form-control" name="password_confirmation" placeholder="Confimar senha" autocomplete="off">
                                         </div>
                                         <button type="submit" class="btn btn-primary shadow-2 mb-4">Registrar</button>
                                     </form>

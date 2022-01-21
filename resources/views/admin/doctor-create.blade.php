@@ -37,18 +37,18 @@
                                             <h5>Novo Médico</h5>
                                         </div>
                                         <div class="card-block pb-0">
-                                            <form class="link-form" action='{{ route('doctors.store') }}' method='POST' enctype="multipart/form-data">
+                                            <form class="link-form" action="{{ route('doctors.store') }}" method='POST' enctype="multipart/form-data">
                                                 {{ csrf_field() }}
                                                 <div class="bg-c-blue config-avatar shadow-3">
-                                                    <img src='{{ asset('img/pictures/default.png') }}'>
+                                                    <img src="{{ asset('img/pictures/default.png') }}">
                                                 </div>
                                                 <div class="controls" style="display: none;">
                                                     <input type="file" name="image"/>
                                                 </div>
-                                                <input id='doctor-name' class='form-control' type='text' name='name' placeholder="Nome" required>
-                                                <input id='doctor-email' class='form-control mt-3' type='text' name='email' placeholder="Email" required>
-                                                <input id='doctor-password' class='form-control mt-3' type='password' name='password' placeholder="Senha" required>
-                                                <input class='form-control mt-3' type='text' name='specialty' placeholder="Especialização">
+                                                <input id='doctor-name' class='form-control' type='text' name='name' placeholder="Nome" required autocomplete="off">
+                                                <input id='doctor-email' class='form-control mt-3' type='text' name='email' placeholder="Email" required autocomplete="off">
+                                                <input id='doctor-password' class='form-control mt-3' type='password' name='password' placeholder="Senha" required autocomplete="off">
+                                                <input class='form-control mt-3' type='text' name='specialty' placeholder="Especialização" autocomplete="off">
                                                 <br>
                                                 <button class='btn btn-outline-primary' type='submit'>Enviar</button>
                                                 <br>

@@ -98,6 +98,9 @@
     <script>
         $(document).ready(function() {
             $('#tb-appointments').DataTable();
+            $('#tb-appointments input').setAttribute('class', "teste");
+
+            
         } );
     </script>
 @endsection

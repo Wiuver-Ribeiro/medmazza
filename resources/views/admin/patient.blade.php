@@ -46,8 +46,8 @@
                                                     <input type="file" name="image"/>
                                                 </div>
                                                 <input name="_method" type="hidden" value="PUT">
-                                                <input id='patient-name' class='form-control' type='text' name='name' placeholder="Nome" value='{{ $patient->name }}'>
-                                                <input class='form-control mt-3' type='text' name='social' placeholder="CPF" value='{{ $patient->patient->social_number ?? '' }}'>
+                                                <input id='patient-name' class='form-control' type='text' name='name' autocomplete="off" placeholder="Nome" value='{{ $patient->name }}'>
+                                                <input class='form-control mt-3' type='text' name='social' placeholder="CPF" autocomplete="off" value='{{ $patient->patient->social_number ?? '' }}'>
                                                 <div class="form-group mt-2">
                                                     <label for="blood-type">Tipo Sanguíneo</label>
                                                     <select class="form-control" id="blood-type" name="blood">
@@ -63,7 +63,7 @@
                                                     </select>
                                                 </div>
                                                 <br>
-                                                <button class='btn btn-outline-primary' type='submit'>Editar</button>
+                                                <button class='btn btn-outline-primary' type='submit'>Alterar</button>
                                             </form>
                                             <form action="{{ route('patients.destroy', $patient->id) }}" method="post" class="mb-3">
                                                 {{ csrf_field() }}

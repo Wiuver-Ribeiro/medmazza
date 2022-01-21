@@ -34,10 +34,10 @@
                                     <form action="{{ route('signin') }}" method="post">
                                         {{ csrf_field() }}
                                         <div class="input-group mb-3">
-                                            <input type="email" class="form-control" name="email" placeholder="Email">
+                                            <input type="email" class="form-control" name="email" placeholder="Email" autocomplete="off">
                                         </div>
                                         <div class="input-group mb-4">
-                                            <input type="password" class="form-control" name="password" placeholder="Senha">
+                                            <input type="password" class="form-control" name="password" placeholder="Senha" autocomplete="off">
                                         </div>
                                         <div class="form-group text-left">
                                             <div class="checkbox checkbox-fill d-inline">

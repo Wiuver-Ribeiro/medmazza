@@ -46,10 +46,10 @@
                                                     <input type="file" name="image"/>
                                                 </div>
                                                 <input name="_method" type="hidden" value="PUT">
-                                                <input id='doctor-name' class='form-control' type='text' name='name' placeholder="Nome" value='{{ $doctor->name }}'>
-                                                <input class='form-control mt-3' type='text' name='specialty' placeholder="Especialização" value='{{ $doctor->doctor->specialty ?? '' }}'>
+                                                <input id='doctor-name' class='form-control' autocomplete="off" type='text' name='name' placeholder="Nome" value='{{ $doctor->name }}'>
+                                                <input class='form-control mt-3' type='text' autocomplete="off" name='specialty' placeholder="Especialização" value='{{ $doctor->doctor->specialty ?? '' }}'>
                                                 <br>
-                                                <button class='btn btn-outline-primary' type='submit'>Editar</button>
+                                                <button class='btn btn-outline-primary' type='submit'>Alterar</button>
                                             </form>
                                             <form action="{{ route('doctors.destroy', $doctor->id) }}" method="post" class="mb-3">
                                                 {{ csrf_field() }}

@@ -45,13 +45,13 @@
                                                 <div class="controls" style="display: none;">
                                                     <input type="file" name="image"/>
                                                 </div>
-                                                <input id='patient-name' class='form-control' type='text' name='name' placeholder="Nome" required>
-                                                <input id='patient-email' class='form-control mt-3' type='text' name='email' placeholder="Email" required>
-                                                <input id='patient-password' class='form-control mt-3' type='password' name='password' placeholder="Senha" required>
-                                                <input class='form-control mt-3' type='text' name='social' placeholder="CPF">
+                                                <input id='patient-name' class='form-control' type='text' name='name' placeholder="Nome" required autocomplete="off">
+                                                <input id='patient-email' class='form-control mt-3' type='text' name='email' placeholder="Email" required autocomplete="off">
+                                                <input id='patient-password' class='form-control mt-3' type='password' name='password' placeholder="Senha" required autocomplete="off">
+                                                <input class='form-control mt-3' type='text' name='social' placeholder="CPF" autocomplete="off">
                                                 <div class="form-group mt-2">
                                                     <label for="blood-type">Tipo Sanguíneo</label>
-                                                    <select class="form-control" id="blood-type" name="blood">
+                                                    <select class="form-control" id="blood-type" name="blood" autocomplete="off>
                                                         <option value="">Selectionar</option>
                                                         <option value="A+">A+</option>
                                                         <option value="A-">A-</option>
